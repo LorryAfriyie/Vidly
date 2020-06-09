@@ -6,8 +6,11 @@
 <section style="padding-top: 100px;">
     <h2>@Model.Name</h2>
     <ul>
-        <li>@Model.MembershipType.Name</li>
-        <li>@Model.Birthday</li>
+        <li>Membership Type: @Model.MembershipType.Name</li>
+        @if (Model.Birthday.HasValue)
+        {
+            <li>Birth date: @Model.Birthday.Value.ToLongDateString()</li>
+        }
     </ul>
 </section>
 
