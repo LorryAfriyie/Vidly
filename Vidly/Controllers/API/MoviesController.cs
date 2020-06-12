@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Data.Entity;
 using Vidly.Models;
 using Vidly.DTOs;
 using AutoMapper;
@@ -19,9 +20,14 @@ namespace Vidly.Controllers.API
             _context = new ApplicationDbContext();
         }
 
-        public IEnumerable<MovieDto> GetMovies()
+        public IHttpActionResult GetMovies()
         {
-            return _context.Movies.ToList().Select(Mapper.Map<Movie, MovieDto>);
+            var movieDtos = _context.Movies
+                .Include(m => m.Genre)
+                .ToList()
+                .Select(Mapper.Map<Movie, MovieDto>);
+
+            return Ok(movieDtos);
         }
 
         public IHttpActionResult GetMovie(int id)

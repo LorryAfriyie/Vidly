@@ -195,6 +195,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="DTOs\CustomerDto.cs" />
+    <Compile Include="DTOs\GenreDto.cs" />
     <Compile Include="DTOs\MembershipTypeDto.cs" />
     <Compile Include="DTOs\MovieDto.cs" />
     <Compile Include="Global.asax.cs">
@@ -247,6 +248,10 @@
     <Compile Include="Migrations\202005210809141_RequireMovieName.cs" />
     <Compile Include="Migrations\202005210809141_RequireMovieName.designer.cs">
       <DependentUpon>202005210809141_RequireMovieName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006121132047_SeedUsers.cs" />
+    <Compile Include="Migrations\202006121132047_SeedUsers.designer.cs">
+      <DependentUpon>202006121132047_SeedUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -718,6 +723,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005210809141_RequireMovieName.resx">
       <DependentUpon>202005210809141_RequireMovieName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006121132047_SeedUsers.resx">
+      <DependentUpon>202006121132047_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
