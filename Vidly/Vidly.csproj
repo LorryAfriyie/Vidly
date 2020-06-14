@@ -253,6 +253,14 @@
     <Compile Include="Migrations\202006121132047_SeedUsers.designer.cs">
       <DependentUpon>202006121132047_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006121303033_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\202006121303033_AddDrivingLicenseToApplicationUser.designer.cs">
+      <DependentUpon>202006121303033_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141202167_AddContact.cs" />
+    <Compile Include="Migrations\202006141202167_AddContact.designer.cs">
+      <DependentUpon>202006141202167_AddContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -262,6 +270,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -658,7 +667,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
@@ -675,6 +684,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -726,6 +736,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006121132047_SeedUsers.resx">
       <DependentUpon>202006121132047_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006121303033_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>202006121303033_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141202167_AddContact.resx">
+      <DependentUpon>202006141202167_AddContact.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
